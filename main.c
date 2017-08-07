@@ -194,7 +194,7 @@ int main()
 
     set_initial_conditions(r, time, T);
 
-    solve_matrix(1.0, r, time, T);              //Finds the Temperature as a function of r after a 1 year simulation
+    solve_matrix(0.01, r, time, T);              //Finds the Temperature as a function of r after a 1 year simulation
                                                 //using the method described on page 45 to find the temperature at the
     store_data(T, T_final, r, time, 0);         //next time interval, looped until duration is reached
                                             //Once calculated, this final heat distribution
